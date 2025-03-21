@@ -4,18 +4,121 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RuralPos</title>
+    <base href="">
+
+    <link rel="" href="">
+
+    <script>
+        window.alert("esto es un llamado de JS")
+    </script>
+
+    <!-- <script src="archivo.js"></script> -->
+
+    <meta charset="UTF-8">
+
+    <meta name="description" content="RuralPos Software de punto de venta para tiendas rurales">
+
+    <meta name="keywords" content="ventas, rural, tiendas, software, punto de venta, ruralpos">
+
+    <meta name="author" content="Niurka Yupanqui">
+
+    <meta name="copyrigth" content="Todos los derechos reservados - 2025">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="application-name" content="RuralPos
+
+    <meta name="generator" content="Sofware generado por terceros (Wordpress 4.1)">
+
+    <meta name="robots" content="index">
+    <meta name="robots" content="follow">
+    <meta name="robots" content="noindex, nofollow">
+
+    <meta http-equiv="cache-control" content="no_cache">
+
+    <meta http-equiv="expires" content="60">
+    <meta http-equiv="expires" content="Sat, 01 Dec 2023 00:00:00 GMT">
+    
+    <meta http-equiv="refresh" content="2">
 </head>
 <body>
     
     <h1>RuralPos</h1>
+    <img src="util/img/logo.png" alt="Logo de RuralPos" width="500px">
     <h3>Empeiza ahora!!</h3>
     <p>Solicita un demo</p>
+
+    Completa el siguiente formulario y nos pondremos en contacto.<br>
+
+
+    <form action="archivoProcesaInfo.php" target="_blank" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Ingreso de datos</legend>
+            <label for="ingreso_nombre">Nombre:</label>
+            <input type="text" id="ingreso_nombre" name="userNombre" placeholder="Ingrese su nombre">
+            <label for="ingreso_apellido">Apellido:</label>
+            <input type="text" id="ingreso_apellido" name="userApellido" placeholder="Ingrese su primer apellido">
+            <label for="correo electronico">Apellido:</label>
+            <input type="email" id="ingreso_correo" name="userCorreo" placeholder="Ingrese su correo electronico">
+            <label for="ingreso_telefono">Telefono:</label>
+            <input type="tel" id="ingreso_telefono" name="userTelefono" placeholder="Ingrese su telefono">
+            <label for="ingreso_ciudad">Ciudad:</label>
+            <input type="text" id="ingreso_ciudad" name="userCiudad" placeholder="Ingrese su ciudad">
+
+        </fieldset>
+        <br>
+        
+
+        <fieldset>
+            <legend>¿Qué te gustaría ver en el Demo?</legend>
+        
+            <!-- Selección múltiple -->
+            <select name="userDemo" id="ingreso" size="4" multiple>
+                <option value="noSelect" selected>Seleccione mínimo 1 opción...</option>
+                <option value="Funcionalidades claves">Funcionalidades claves</option>
+                <option value="Integraciones">Integraciones</option>
+                <option value="Casos de uso">Casos de uso</option>
+                <option value="Otro">Otro</option>
+            </select>
+        
+            <br><br>
+        
+            <!-- Campo de texto adicional -->
+            <label for="ingreso_texto">Especificar (si eligió "Otro"):</label>
+            <br>
+            <textarea name="userDescriptionOtros" id="ingreso_texto" cols="50" rows="5" placeholder="Escribe aquí..."></textarea>
+        </fieldset>
+        
+
+
+
+
+<fieldset>
+    <legend>Especificar fecha, hora o texto:</legend>
+
+    <!-- Selector de fecha y hora -->
+    <label for="datetime">Seleccionar fecha y hora:</label>
+    <input type="datetime-local" id="datetime" name="userDatetime">
+
+</fieldset>
+
+
+
+
+
+
+
+
+        <br>
+
+        <button type="reset">Borrar</button>
+        <button type="submit">Enviar</button>
 
     <!-- Formulario -->
 
 
 
-    <img src="util/img/logo.png" alt="Logo de RuralPos" width="500px">
+   
 
 
 
@@ -47,7 +150,6 @@
     </dl>
    
     <video src="util/vid/video_danza.mp4" poster="util/img/imagen_grande_epn_600.jpeg"  heigth="800px" controls>
-        Tu navegador no admite el elemento, utiliza otro navegador
     </video>
 
     <h1>Testimonios</h1>
@@ -89,6 +191,12 @@
     <a href="https://www.instagram.com/@niurka_50">Instagram</a> <br>
     <a href="https://www.linkedin.com/in/niurka-yupanqui-7b0b3b1b1">Linkedin</a><br>
     <a href="">Medium</a><br>
+
+     
+    <img src="resources\instagram.png" alt="Iconoinstagram" width="500px">
+    <img src="resources\linkedin.png" alt="IconoLinkedin" width="500px">
+    <img src="resources\medium.png" alt="IconoMedium" width="500px">
+    <img src="resources\github.png" alt="IconoGithub" width="500px">
 
     
 </body>
