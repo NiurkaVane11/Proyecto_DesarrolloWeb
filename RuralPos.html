@@ -2,20 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RuralPos</title>
     <base href="">
-
     <link rel="" href="">
 
-    <script>
-        window.alert("esto es un llamado de JS")
-    </script>
-
-    <!-- <script src="archivo.js"></script> -->
-
-    <meta charset="UTF-8">
-
+   
     <meta name="description" content="RuralPos Software de punto de venta para tiendas rurales">
 
     <meta name="keywords" content="ventas, rural, tiendas, software, punto de venta, ruralpos">
@@ -26,7 +16,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="application-name" content="RuralPos
+    <meta name="application-name" content="RuralPOS">
 
     <meta name="generator" content="Sofware generado por terceros (Wordpress 4.1)">
 
@@ -38,13 +28,53 @@
 
     <meta http-equiv="expires" content="60">
     <meta http-equiv="expires" content="Sat, 01 Dec 2023 00:00:00 GMT">
-    
+    <title>RuralPos </title>
+
     <meta http-equiv="refresh" content="2">
+    
+
 </head>
 <body>
-    
-    <h1>RuralPos</h1>
-    <img src="util/img/logo.png" alt="Logo de RuralPos" width="500px">
+    <header id="encabezado_principal">
+        <h1>Bienvenido a RuralPOS</h1>
+        <p>Tu solución gratuita para tiendas rurales.</p>
+        <img src="util/img/logo.png" alt="Logo de RuralPos" width="200">
+    </header>
+
+        <section id ="barra-superior">
+            <nav id = "barra_superior_nav">
+
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#demo">Demo</a></li>
+                    <li><a href="#beneficios">Beneficios</a></li>
+                    <li><a href="#funcionalidades">Funcionalidades</a></li>
+                    <li><a href="#testimonios">Testimonios</a></li>
+                    <li><a href="#descarga">Descarga</a></li>
+                    <li><a href="#tutoriales">Tutoriales</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#sobre_mi">Sobre mi</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>   
+            </nav>
+        </section>  
+
+
+
+
+<section id="inicio">
+    <h2>Que es RuralPos?</h2>
+    <p>RuralPos es un sistema de gestion de ventas para pequeños comercios y tiendas de barrio.</p>
+    <p>Con RuralPos podras llevar un control de tus ventas, productos y clientes
+    de manera facil y rapida.</p>
+
+        <h2>Mision</h2>
+        <h2>Vision</h2>
+    </section>
+
+
+
+<section id = "demo">
     <h3>Empeiza ahora!!</h3>
     <p>Solicita un demo</p>
 
@@ -55,44 +85,42 @@
         <fieldset>
             <legend>Ingreso de datos</legend>
             <label for="ingreso_nombre">Nombre:</label>
-            <input type="text" id="ingreso_nombre" name="userNombre" placeholder="Ingrese su nombre">
+            <input type="text" id="ingreso_nombre" name="userNombre" placeholder="Ingrese su nombre"><br>
             <label for="ingreso_apellido">Apellido:</label>
-            <input type="text" id="ingreso_apellido" name="userApellido" placeholder="Ingrese su primer apellido">
-            <label for="correo electronico">Apellido:</label>
-            <input type="email" id="ingreso_correo" name="userCorreo" placeholder="Ingrese su correo electronico">
-            <label for="ingreso_telefono">Telefono:</label>
+            <input type="text" id="ingreso_apellido" name="userApellido" placeholder="Ingrese su primer apellido"><br>
+            <label for="correo electronico">Email:</label>
+            <input type="email" id="ingreso_correo" name="userCorreo" placeholder="Ingrese su correo electronico"><br>
+            <label for="ingreso_telefono">Telefono/Mobil:</label>
             <input type="tel" id="ingreso_telefono" name="userTelefono" placeholder="Ingrese su telefono">
-            <label for="ingreso_ciudad">Ciudad:</label>
-            <input type="text" id="ingreso_ciudad" name="userCiudad" placeholder="Ingrese su ciudad">
-
+            <label for="tipo_usuario">Selecciona tu perfil:</label>
+                <select name="tipo_usuario" id="tipo_usuario" size="4" multiple>
+                    <option value="agricultor">Agricultor</option>
+                    <option value="emprendedor">Emprendedor</option>
+                    <option value="vendedor">Vendedor</option>
+                    <option value="otro">Otro</option>
+                </select>
         </fieldset>
         <br>
-        
-
         <fieldset>
             <legend>¿Qué te gustaría ver en el Demo?</legend>
-        
-            <!-- Selección múltiple -->
-            <select name="userDemo" id="ingreso" size="4" multiple>
-                <option value="noSelect" selected>Seleccione mínimo 1 opción...</option>
-                <option value="Funcionalidades claves">Funcionalidades claves</option>
-                <option value="Integraciones">Integraciones</option>
-                <option value="Casos de uso">Casos de uso</option>
-                <option value="Otro">Otro</option>
-            </select>
-        
-            <br><br>
-        
-            <!-- Campo de texto adicional -->
-            <label for="ingreso_texto">Especificar (si eligió "Otro"):</label>
-            <br>
+            <label>
+                <input type="checkbox" name="userDemo" value="Funcionalidades claves"> Funcionalidades claves
+            </label><br>
+            <label>
+                <input type="checkbox" name="userDemo" value="Integraciones"> Integraciones
+            </label><br>
+            <label>
+                <input type="checkbox" name="userDemo" value="Casos de uso"> Casos de uso
+            </label><br>
+            <label>
+                <input type="checkbox" name="userDemo" value="Otro"> Otro
+            </label><br>
+            <label for="ingreso_texto">Especificar (si eligió 'Otro'):</label><br>
             <textarea name="userDescriptionOtros" id="ingreso_texto" cols="50" rows="5" placeholder="Escribe aquí..."></textarea>
         </fieldset>
         
-
-
-
-
+        
+<br>
 <fieldset>
     <legend>Especificar fecha, hora o texto:</legend>
 
@@ -101,37 +129,30 @@
     <input type="datetime-local" id="datetime" name="userDatetime">
 
 </fieldset>
+<br>
+
+<button type="submit">Registrarse</button>
+
+    </form>
+
+</section>
+        
+    
 
 
-
-
-
-
-
-
-        <br>
-
-        <button type="reset">Borrar</button>
-        <button type="submit">Enviar</button>
-
-    <!-- Formulario -->
-
-
-
-   
-
-
-
-    <h2>Que es RuralPos?</h2>
-    <p>RuralPos es un sistema de gestion de ventas para pequeños comercios y tiendas de barrio.</p>
-    <p>Con RuralPos podras llevar un control de tus ventas, productos y clientes
-    de manera facil y rapida.</p>
-
-        <h2>Mision</h2>
-        <h2>Vision</h2>
-
+    
+<section id="beneficios">
     <h2>Beneficios</h2>
+    <ul>
+        <li>Facil de usar</li>
+        <li>Gratis</li>
+        <li>Soporte 24/7</li>
+        <li>Actualizaciones constantes</li>
+    </ul>
+</section>
 
+
+<section id="funcionalidades">
     <h2>Funcionalidades</h2>
 
     <dl>
@@ -149,54 +170,87 @@
         imagen
     </dl>
    
-    <video src="util/vid/video_danza.mp4" poster="util/img/imagen_grande_epn_600.jpeg"  heigth="800px" controls>
+    <video src="util/vid/video_danza.mp4" poster="util/img/imagen_grande_epn_600.jpeg"  heigth="900px" controls>
     </video>
+</section>
 
-    <h1>Testimonios</h1>
-    <p>Testimonio 1</p><br>
-    <p>Testimonio 2</p>
-
-
-    <h4>Descarga RuralPos gratis</h4>
-
-
-        
-
-    <h2>Tutoriales a usar</h2>
-  <ol>
-        <li>Como registrar un producto</li>
-        <li>Como registrar un cliente</li>
-        <li>Como realizar una venta</li>
-
-    </ol>
-
-
-    <h2>FAQ</h2>
-    <p>Preguntas frecuentes</p>
-    <ul>
-        <li>Pregunta 1</li>
-        <li>Pregunta 2</li>
-        <li>Pregunta 3</li>
-    </ul>
-
-
-
-
-    <h2>Sobre mi</h2>
-    <h2>CEO: Niurka Yupanqui</h2>
-    <p>Hola, soy Niurka creadora de RuralPos...................</p>
    
-    <h2>Redes Sociales</h2>
+<section id="testimonios">
 
-    <a href="https://www.instagram.com/@niurka_50">Instagram</a> <br>
-    <a href="https://www.linkedin.com/in/niurka-yupanqui-7b0b3b1b1">Linkedin</a><br>
-    <a href="">Medium</a><br>
+</section>
 
-     
-    <img src="resources\instagram.png" alt="Iconoinstagram" width="500px">
-    <img src="resources\linkedin.png" alt="IconoLinkedin" width="500px">
-    <img src="resources\medium.png" alt="IconoMedium" width="500px">
-    <img src="resources\github.png" alt="IconoGithub" width="500px">
+
+    <section id ="descarga">
+        <h1>Descarga gratutitamente RuralPOS</h1>
+        <h2>Descarga para Windows</h2>
+        <a href="https://www.microsoft.com/es-es/windows">Descargar</a>
+        <h2>Descarga para Mac</h2>
+        <a href="https://www.apple.com/es/macos/big-sur/">Descargar</a>
+    </section>
+
+
+    <section id="tutoriales">
+        <h2>Tutoriales</h2>
+        <ol>
+            <li>Como registrar un producto</li>
+            <li>Como registrar un cliente</li>
+            <li>Como realizar una venta</li>
+        </ol>
+    </section>
+
+   
+
+
+    <section id="faq">
+        <h2>FAQ</h2>
+        <ul>
+            <li>Pregunta 1</li>
+            <li>Pregunta 2</li>
+            <li>Pregunta 3</li>
+        </ul>
+    </section>
+
+    <section id="sobre_mi">
+        <h2>Sobre mí</h2>
+        <p>Hola, soy Niurka Yupanqui, creadora de RuralPos. Mi objetivo es ayudar a las tiendas rurales a gestionar sus ventas de manera eficiente.</p>
+        <nav>
+            <li><a href="https://www.instagram.com/@niurka_50">Instagram</a> </li>
+            <li><a href="https://www.linkedin.com/in/niurka-yupanqui-7b0b3b1b1">Linkedin</a></li>
+            <li><a href="">Github</a> </li>
+            <li><a href="">Gmail</a></li>
+            <li><a href="">Linktree</a></li>
+
+            <img src="resources\instagram.png" alt="Iconoinstagram" width="50px">
+            <img src="resources\linkedin.png" alt="IconoLinkedin" width="50px">
+            <img src="resources\github.png" alt="IconoGithub" width="45px">
+            <img src="resources\gmail.png" alt="IconoGmail" width="50px">
+            <img src="resources\linktree.png" alt="IconoLinktree" width="50px">
+        </nav>
+    </section>
+
+    <section id ="contacto">
+        <h2>Contacto</h2>
+        <p>Si tienes alguna duda o consulta, no dudes en contactarme.</p>
+        <form action="archivoProcesaInfo.php" target="_blank" method="get" autocomplete="on">
+            <fieldset>
+                <legend>Formulario de contacto</legend>
+                <label for="ingreso_nombre">Nombre:</label>
+                <input type="text" id="ingreso_nombre" name="userNombre" placeholder="Ingrese su nombre"><br>
+                <label for="ingreso_correo">Email:</label>
+                <input type="email" id="ingreso_correo" name="userCorreo" placeholder="Ingrese su correo electronico"><br>
+                <label for="ingreso_telefono">Telefono/Mobil:</label>
+                <input type="tel" id="ingreso_telefono" name="userTelefono" placeholder="Ingrese su telefono"><br>
+                <label for="ingreso_mensaje">Mensaje:</label><br>
+                <textarea name="userMensaje" id="ingreso_mensaje" cols="50" rows="5" placeholder="Escribe aquí..."></textarea>
+            </fieldset>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+
+    <footer>
+        <p>&copy; RuralPOS - Todos los derechos reservados - 2025</p>
+    </footer>
 
     
 </body>
