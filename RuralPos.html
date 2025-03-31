@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="RuralPos.css">
     <link rel="icon" href="resources/iconoenproceso.png" type="image/x-icon">
+    <script src="RuralPos.js"></script>
 
    
     <meta name="description" content="RuralPos Software de punto de venta para tiendas rurales">
@@ -39,7 +40,6 @@
 
                 <ul>
                     <li><a href="#inicio">Inicio</a></li>
-                    <li><a href="#demo">Demo</a></li>
                     <li><a href="#beneficios">Beneficios</a></li>
                     <li><a href="#funcionalidades">Funcionalidades</a></li>
                     <li><a href="#testimonios">Testimonios</a></li>
@@ -48,15 +48,16 @@
                     <li><a href="#faq">FAQ</a></li>
                     <li><a href="#contacto">Contacto</a></li>
                     <li><a href="#sobre_mi">Sobre mi</a></li>
+                    <li><a href="demo.html" class="boton-demo">Solicitar Demo</a></li>
                    
                 </ul>   
             </nav>
         </section>  
 
+
         <header id="encabezado_principal">
             <h1>RuralPOS</h1>
             <p>Tu solución gratuita para tiendas rurales</p>
-    
             <img src="resources/iconoenproceso.png" alt="Logo de RuralPos" width="200">
         </header>
 
@@ -74,71 +75,10 @@
 
 </section>
 
-<section id = "demo">
-    <h3>Empeiza ahora!!</h3>
-    <p>Solicita un demo</p>
-
-    Completa el siguiente formulario y nos pondremos en contacto.<br>
 
 
-    <form action="archivoProcesaInfo.php" target="_blank" method="get" autocomplete="on">
-        <fieldset>
-            <legend>Ingreso de datos</legend>
-            <label for="ingreso_nombre">Nombre:</label>
-            <input type="text" id="ingreso_nombre" name="userNombre" placeholder="Ingrese su nombre"><br>
-            <label for="ingreso_apellido">Apellido:</label>
-            <input type="text" id="ingreso_apellido" name="userApellido" placeholder="Ingrese su primer apellido"><br>
-            <label for="correo electronico">Email:</label>
-            <input type="email" id="ingreso_correo" name="userCorreo" placeholder="Ingrese su correo electronico"><br>
-            <label for="ingreso_telefono">Telefono/Mobil:</label>
-            <input type="tel" id="ingreso_telefono" name="userTelefono" placeholder="Ingrese su telefono">
-            <label for="tipo_usuario">Selecciona tu perfil:</label>
-                <select name="tipo_usuario" id="tipo_usuario" size="4" multiple>
-                    <option value="agricultor">Agricultor</option>
-                    <option value="emprendedor">Emprendedor</option>
-                    <option value="vendedor">Vendedor</option>
-                    <option value="otro">Otro</option>
-                </select>
-        </fieldset>
-        <br>
-        <fieldset>
-            <legend>¿Qué te gustaría ver en el Demo?</legend>
-            <label>
-                <input type="checkbox" name="userDemo" value="Funcionalidades claves"> Funcionalidades claves
-            </label><br>
-            <label>
-                <input type="checkbox" name="userDemo" value="Integraciones"> Integraciones
-            </label><br>
-            <label>
-                <input type="checkbox" name="userDemo" value="Casos de uso"> Casos de uso
-            </label><br>
-            <label>
-                <input type="checkbox" name="userDemo" value="Otro"> Otro
-            </label><br>
-            <label for="ingreso_texto">Especificar (si eligió 'Otro'):</label><br>
-            <textarea name="userDescriptionOtros" id="ingreso_texto" cols="50" rows="5" placeholder="Escribe aquí..."></textarea>
-        </fieldset>
+
         
-        
-<br>
-<fieldset>
-    <legend>Especificar fecha, hora o texto:</legend>
-
-    <!-- Selector de fecha y hora -->
-    <label for="datetime">Seleccionar fecha y hora:</label>
-    <input type="datetime-local" id="datetime" name="userDatetime">
-
-</fieldset>
-<br>
-
-<button type="submit">Registrarse</button>
-
-    </form>
-
-</section>
-        
-    
-
 
     
 <section id="beneficios">
@@ -265,12 +205,37 @@
     <section id="faq">
         <h2>FAQ</h2>
         <ul>
-            <li>Pregunta 1</li>
-            <li>Pregunta 2</li>
-            <li>Pregunta 3</li>
+            <li>
+                <strong>¿RuralPOS es gratuito?</strong>
+                <p>RuralPOS es un software gratuito para emprendedores de tiendas en zonas rurales. No tiene costos asociados.</p>
+            </li>
+            <li>
+                <strong>¿RuralPOS funciona sin conexión a internet?</strong>
+                <p>Sí, RuralPOS tiene una funcionalidad offline, lo que permite a los usuarios seguir operando incluso sin conexión a internet.</p>
+            </li>
+            <li>
+                <strong>¿Puedo usar RuralPOS en cualquier tipo de dispositivo?</strong>
+                <p>RuralPOS es compatible con dispositivos como computadoras de escritorio, tablets y teléfonos móviles, lo que lo hace accesible para una amplia gama de usuarios.</p>
+            </li>
+            <li>
+                <strong>¿Puedo agregar más productos o modificar la base de datos de mi tienda?</strong>
+                <p>Sí, puedes agregar nuevos productos, modificarlos o eliminarlos según sea necesario para mantener tu inventario actualizado.</p>
+            </li>
+            <li>
+                <strong>¿RuralPOS tiene soporte técnico?</strong>
+                <p>Sí, ofrecemos soporte técnico a través de nuestro equipo de atención al cliente, así como tutoriales y guías en línea.</p>
+            </li>
+            <li>
+                <strong>¿RuralPOS es seguro para almacenar información de mis ventas y productos?</strong>
+                <p>Sí, tu información está protegida mediante estándares de seguridad, garantizando la privacidad y protección de tus datos.</p>
+            </li>
+            <li>
+                <strong>¿RuralPOS funciona en zonas rurales con conexiones lentas a internet?</strong>
+                <p>RuralPOS está optimizado para funcionar bien en zonas con conexiones lentas, asegurando que puedas seguir operando sin interrupciones.</p>
+            </li>
         </ul>
     </section>
-
+    
 
 
 
@@ -287,7 +252,6 @@
 
     <section id ="contacto">
         <h2>Contacto</h2>
-        <p>Si tienes alguna duda o consulta, no dudes en contactarme.</p>
         <form action="archivoProcesaInfo.php" target="_blank" method="get" autocomplete="on">
             <fieldset>
                 <legend>Formulario de contacto</legend>
@@ -305,9 +269,6 @@
     </section>
 
 
-    <footer>
-        <p>&copy; RuralPOS - Todos los derechos reservados - 2025</p>
-    </footer>
     <section id="sobre_mi">
         <h2>Sobre mí</h2>
         <img src="resources/yo.jpg" alt="Foto de Niurka Yupanqui" width="200px" class="foto-perfil">
@@ -337,7 +298,8 @@
     
 
   
-
-    
+    <footer>
+        <p>&copy; RuralPOS - Todos los derechos reservados - 2025</p>
+    </footer> 
 </body>
 </html>

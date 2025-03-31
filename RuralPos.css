@@ -20,11 +20,6 @@
 
 
 
-
-
-
-
-
 /* General Styles */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -34,6 +29,28 @@ body {
     color: var(--text-color);
     background-color: var(--light-bg);
 }
+
+.boton-demo {
+    display: inline-block;
+    padding: 14px 28px;
+    background-color: var(--primary-color); /* Usando tu variable de color */
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    margin-top: 25px;
+    transition: all 0.3s;
+    font-size: 1.1rem;
+    border: 2px solid transparent;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.boton-demo:hover {
+    background-color: var(--accent-color);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    border-color: rgba(255,255,255,0.3);
+} 
 
 
 #funcionalidades {
@@ -153,13 +170,17 @@ body {
 }
 
 /* Navigation Bar */
+
 #barra-superior {
     background-color: var(--secondary-color);
     position: sticky;
     top: 0;
     z-index: 100;
     width: 100%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    transition: all 0.3s ease; /* Para animaciones suaves */
 }
+
 
 #barra_superior_nav ul {
     list-style-type: none;
@@ -592,20 +613,6 @@ footer {
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #inicio {
     background: linear-gradient(135deg, #f9fafb 0%, #f3f4f6 100%);
     padding: 60px 20px;
@@ -720,5 +727,70 @@ footer {
     #inicio p {
         text-align: left;
         padding: 0;
+    }
+}
+#faq {
+    background-color: #f4f4f9;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 800px;
+    margin: 30px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#faq h2 {
+    text-align: center;
+    color: #2c3e50;
+    font-family: 'Arial', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#faq ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#faq li {
+    margin-bottom: 20px;
+}
+
+#faq li strong {
+    font-size: 1.2rem;
+    color: #34495e;
+    display: block;
+    margin-bottom: 10px;
+}
+
+#faq li p {
+    font-size: 1rem;
+    color: #7f8c8d;
+    line-height: 1.6;
+    margin-left: 20px;
+    margin-top: 0;
+}
+
+#faq li:hover {
+    background-color: #ecf0f1;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    #faq {
+        padding: 15px;
+    }
+
+    #faq h2 {
+        font-size: 1.5rem;
+    }
+
+    #faq li strong {
+        font-size: 1rem;
+    }
+
+    #faq li p {
+        font-size: 0.9rem;
     }
 }
