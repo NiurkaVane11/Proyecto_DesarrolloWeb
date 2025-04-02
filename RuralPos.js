@@ -135,3 +135,20 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Llamar a la función cuando el DOM esté listo
 document.addEventListener('DOMContentLoaded', cargarTestimonios);
+document.addEventListener('DOMContentLoaded', function() {
+    const circles = document.querySelectorAll('.circle');
+    const cards = document.querySelectorAll('.card');
+
+    circles.forEach(circle => {
+        circle.addEventListener('click', function() {
+            const cardId = this.getAttribute('data-card');
+            const card = document.getElementById(cardId);
+
+            circles.forEach(c => c.classList.remove('active'));
+            this.classList.add('active');
+
+            cards.forEach(c => c.style.transform = 'translateX(0)');
+            card.style.transform = 'translateX(-100%)';
+        });
+    });
+});
