@@ -19,11 +19,10 @@
 }
 
 
-
- 
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 /* General Styles */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Playfair Display", serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
@@ -165,12 +164,19 @@ body {
     font-size: 2.5rem;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+
 #encabezado_principal p {
-    margin: 0.5rem 0;
-    font-size: 1.2rem;
-}
-
-
+    font-size: 1.6rem;
+    font-family: 'Playfair Display', serif;
+    
+    background:linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(212,39,80,1) 33%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 81%) ;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text; /* Para Firefox */
+  }
+  
 
 
 
@@ -558,6 +564,7 @@ footer {
 #encabezado_principal {
     background: url('resources/f122.jpg') no-repeat center center;
     background-size: cover;
+    background-attachment: fixed;
     color: white;
     text-align: center;
     padding: 6rem 0 2rem 0;
@@ -1134,4 +1141,52 @@ footer {
     font-weight: bold;
 }
 
+------------------------------------------------------
+/* Estilo mejorado para el botón de ir arriba */
+#btn-ir-arriba {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 28px; /* Tamaño más grande */
+    font-weight: bold; /* Texto en negrita */
+    cursor: pointer;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Sombra más pronunciada */
+    z-index: 9999; /* Mayor z-index para asegurar que esté por encima */
+    transition: all 0.3s ease;
+    opacity: 0; /* Inicialmente transparente */
+    transform: translateY(20px); /* Efecto de aparición */
+}
 
+#btn-ir-arriba.visible {
+    display: flex;
+    opacity: 1; /* Totalmente visible */
+    transform: translateY(0); /* Posición final */
+}
+
+#btn-ir-arriba:hover {
+    background-color: #3d8b40; /* Color más oscuro al hover */
+    transform: translateY(-5px) scale(1.05); /* Efecto de levantar y agrandar */
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3); /* Sombra más grande al hover */
+}
+
+
+
+.contenedor_descarga {
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0px;
+  }
+  
+
+
+  
